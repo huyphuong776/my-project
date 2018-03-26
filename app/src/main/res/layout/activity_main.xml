@@ -11,14 +11,13 @@
 
     <RatingBar
         android:id="@+id/ratingBar"
-        style="@android:style/Widget.Holo.RatingBar.Indicator"
+        style="@android:style/Widget.Holo.Light.RatingBar.Indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="67dp"
         android:numStars="5"
-        android:rating="1"
         android:stepSize="1" />
 
     <TextView
@@ -32,14 +31,13 @@
 
     <RatingBar
         android:id="@+id/ratingBar2"
-        style="@android:style/Widget.Holo.RatingBar.Indicator"
+        style="@android:style/Widget.Holo.Light.RatingBar.Indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/ratingBar"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="20dp"
         android:numStars="5"
-        android:rating="1"
         android:stepSize="1" />
 
     <TextView
@@ -53,14 +51,13 @@
 
     <RatingBar
         android:id="@+id/ratingBar3"
-        style="@android:style/Widget.Holo.RatingBar.Indicator"
+        style="@android:style/Widget.Holo.Light.RatingBar.Indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/ratingBar2"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="22dp"
         android:numStars="5"
-        android:rating="1"
         android:stepSize="1" />
 
     <TextView
@@ -88,7 +85,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="28dp"
-        android:text="Bình Luận" />
+        android:text="Chấp Nhận" />
 
     <TextView
         android:id="@+id/textView4"
@@ -97,7 +94,7 @@
         android:layout_alignBaseline="@+id/binhluan"
         android:layout_alignBottom="@+id/binhluan"
         android:layout_toEndOf="@+id/textView6"
-        android:text="GetRate"
+        android:text="0/5"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
     <RatingBar

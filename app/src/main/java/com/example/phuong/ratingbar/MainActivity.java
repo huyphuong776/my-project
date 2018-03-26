@@ -72,8 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         nhaXe.setText("Xe Hiếu Hòa");
 
-        int dem = (int) (ratingBar.getRating()+ratingBar2.getRating()+ratingBar3.getRating())/3;
-        textView.setText(dem + "/5");
+
             //Log.d("HUYPHUONG", "" + dem);
         imgHinh.setImageResource(R.drawable.h1);
 
@@ -84,8 +83,10 @@ public class MainActivity extends AppCompatActivity {
         binhLuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String noiDung="Chua co";
-                Toast.makeText(MainActivity.this, noiDung, Toast.LENGTH_LONG).show();
+                // noiDung="Chấp Nhận";
+                //Toast.makeText(MainActivity.this, noiDung, Toast.LENGTH_LONG).show();
+                int dem = (int) (ratingBar.getRating()+ratingBar2.getRating()+ratingBar3.getRating())/3;
+                textView.setText(dem + "/5");
                 //Toast.makeText(MainActivity.this, "Stars: " + (float)ratingBar.getRating(), Toast.LENGTH_SHORT).show();
             }
         });
