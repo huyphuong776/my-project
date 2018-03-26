@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
 
     TextView textView;
+
+    ImageView imgHinh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,33 +37,37 @@ public class MainActivity extends AppCompatActivity {
 
         textView= (TextView) findViewById(R.id.textView4);
         //button= (Button) findViewById(R.id.button);
+        imgHinh = (ImageView) findViewById(R.id.imageViewHinh);
 
-        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                Toast.makeText(MainActivity.this, "Stars " + (int)v , Toast.LENGTH_SHORT).show();
-            }
-        });
+//        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+//            @Override
+//            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
+//                //Toast.makeText(MainActivity.this, "Stars " + (int)v , Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//
+//
+//        ratingBar2.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+//            @Override
+//            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
+//                //Toast.makeText(MainActivity.this, "Stars " + (int)v , Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//
+//
+//        ratingBar3.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+//            @Override
+//            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
+//                //Toast.makeText(MainActivity.this, "Stars " + (int)v , Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
-
-        ratingBar2.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                Toast.makeText(MainActivity.this, "Stars " + (int)v , Toast.LENGTH_SHORT).show();
-            }
-        });
-
-
-        ratingBar3.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                Toast.makeText(MainActivity.this, "Stars " + (int)v , Toast.LENGTH_SHORT).show();
-            }
-        });
-
-            int dem = (int) (ratingBar.getRating()+ratingBar2.getRating()+ratingBar3.getRating())/3;
-            textView.setText(dem + "/5");
+        int dem = (int) (ratingBar.getRating()+ratingBar2.getRating()+ratingBar3.getRating())/3;
+        textView.setText(dem + "/5");
             //Log.d("HUYPHUONG", "" + dem);
+        imgHinh.setImageResource(R.drawable.h1);
+
+
 
 
 
