@@ -18,7 +18,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="67dp"
         android:numStars="5"
-        android:rating="1.0"
+        android:rating="1"
         android:stepSize="1" />
 
     <TextView
@@ -39,7 +39,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="20dp"
         android:numStars="5"
-        android:rating="1.0"
+        android:rating="1"
         android:stepSize="1" />
 
     <TextView
@@ -60,7 +60,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="22dp"
         android:numStars="5"
-        android:rating="1.0"
+        android:rating="1"
         android:stepSize="1" />
 
     <TextView
@@ -73,16 +73,16 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tennhaxe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Xe Hiếu Hòa"
+        android:text="Tên nhà xe"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/binhluan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -94,8 +94,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button4"
-        android:layout_alignBottom="@+id/button4"
+        android:layout_alignBaseline="@+id/binhluan"
+        android:layout_alignBottom="@+id/binhluan"
         android:layout_toEndOf="@+id/textView6"
         android:text="GetRate"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />

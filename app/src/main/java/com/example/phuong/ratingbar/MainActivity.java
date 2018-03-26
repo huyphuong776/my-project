@@ -1,5 +1,6 @@
 package com.example.phuong.ratingbar;
 
+import android.annotation.SuppressLint;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,13 +16,17 @@ public class MainActivity extends AppCompatActivity {
     RatingBar ratingBar;
     RatingBar ratingBar2;
     RatingBar ratingBar3;
-    //Button button;
+
+    Button binhLuan;
+
     ViewPager viewPager;
 
     TextView textView;
+    TextView nhaXe;
 
     ImageView imgHinh;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
         ratingBar3= (RatingBar) findViewById(R.id.ratingBar3);
 
         textView= (TextView) findViewById(R.id.textView4);
-        //button= (Button) findViewById(R.id.button);
+        nhaXe= (TextView) findViewById(R.id.tennhaxe);
+
+        binhLuan= (Button) findViewById(R.id.binhluan);
+
         imgHinh = (ImageView) findViewById(R.id.imageViewHinh);
 
 //        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
@@ -62,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
+        nhaXe.setText("Xe Hiếu Hòa");
+
         int dem = (int) (ratingBar.getRating()+ratingBar2.getRating()+ratingBar3.getRating())/3;
         textView.setText(dem + "/5");
             //Log.d("HUYPHUONG", "" + dem);
@@ -71,12 +81,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(MainActivity.this, "Stars: " + (float)ratingBar.getRating(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
+        binhLuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String noiDung="Chua co";
+                Toast.makeText(MainActivity.this, noiDung, Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this, "Stars: " + (float)ratingBar.getRating(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
