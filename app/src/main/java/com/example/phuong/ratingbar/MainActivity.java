@@ -4,24 +4,22 @@ import android.annotation.SuppressLint;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     RatingBar ratingBar;
     RatingBar ratingBar2;
     RatingBar ratingBar3;
 
-    Button binhLuan;
+    Button chapNhan;
 
     ViewPager viewPager;
 
-    TextView textView;
+    TextView textViewTB;
     TextView nhaXe;
 
     ImageView imgHinh;
@@ -36,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
 //        ViewPagerAdapter viewPagerAdapter= new ViewPagerAdapter(this);
 //        viewPager.setAdapter(viewPagerAdapter);
 
-        ratingBar= (RatingBar) findViewById(R.id.ratingBar);
-        ratingBar2= (RatingBar) findViewById(R.id.ratingBar2);
-        ratingBar3= (RatingBar) findViewById(R.id.ratingBar3);
+        ratingBar= (RatingBar) findViewById(R.id.ratingBarPhucvu);
+        ratingBar2= (RatingBar) findViewById(R.id.ratingBarDungGio);
+        ratingBar3= (RatingBar) findViewById(R.id.ratingBarChatLuong);
 
-        textView= (TextView) findViewById(R.id.textView4);
+        textViewTB= (TextView) findViewById(R.id.trungBinh);
         nhaXe= (TextView) findViewById(R.id.tennhaxe);
 
-        binhLuan= (Button) findViewById(R.id.binhluan);
+        chapNhan= (Button) findViewById(R.id.ChapNhan);
 
         imgHinh = (ImageView) findViewById(R.id.imageViewHinh);
 
@@ -74,19 +72,19 @@ public class MainActivity extends AppCompatActivity {
 
 
             //Log.d("HUYPHUONG", "" + dem);
-        imgHinh.setImageResource(R.drawable.h1);
+        imgHinh.setImageResource(R.drawable.h3);
 
 
 
 
 
-        binhLuan.setOnClickListener(new View.OnClickListener() {
+        chapNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // noiDung="Chấp Nhận";
                 //Toast.makeText(MainActivity.this, noiDung, Toast.LENGTH_LONG).show();
                 int dem = (int) (ratingBar.getRating()+ratingBar2.getRating()+ratingBar3.getRating())/3;
-                textView.setText(dem + "/5");
+                textViewTB.setText(dem + "/5");
                 //Toast.makeText(MainActivity.this, "Stars: " + (float)ratingBar.getRating(), Toast.LENGTH_SHORT).show();
             }
         });
